@@ -161,6 +161,7 @@ function App() {
 
   return (
   <div id="main">
+  <ul>
     {
       state.map(item=>(
         <Province
@@ -169,6 +170,7 @@ function App() {
         cities={item.cities}  />
       ))
     }
+    </ul>
   </div>
   );
 }

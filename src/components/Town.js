@@ -2,9 +2,9 @@ import React from 'react'
 
 function Town({name,index}) {
     return (
-        <div>
+        <li>
             <h5 id={'town'+(index+1)} >{name}</h5>
-        </div>
+        </li>
     )
 }
 

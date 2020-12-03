@@ -7,17 +7,19 @@ function Province ({name, cities, index }) {
     }
 
     return (
-        <div>
+        <li>
             <h3 id={'state'+(index +1)} onClick={handleClick}>{name}</h3>
             {clicked ? (
-                cities.map(item=>(
+                <ul>
+                {cities.map(item=>(
                     <City 
                     name={item.name} 
                     towns={item.towns} 
                     index={cities.indexOf(item)} />
-                ))     
+                ))}
+                </ul>     
             ):null}
-        </div>
+        </li>
     )
 }
 export default Province
