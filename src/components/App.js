@@ -158,7 +158,6 @@ const states = [
 
 function App() {
   const [state, setState] = useState(states)
-  const [stateClicked, setClicked] = useState(false);
 
   return (
   <div id="main">
